@@ -1,0 +1,119 @@
+@import '../../App.scss';
+
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile{
+        flex-direction: column;
+    }
+    @include fold{
+        flex-direction: column;
+    }
+
+    .bannerTexts{
+
+        width: 45%;
+
+        @include mobile{
+            width: 100%;
+            text-align: center;
+        }
+        @include fold{
+            width: 100%;
+            text-align: center;
+        }
+
+        p{
+
+            @include mobile{
+                font-size: .8rem;
+                margin-top: 2rem;
+            }
+            @include fold{
+                font-size: .7rem;
+                margin-top: 1.8rem;
+            }
+          .arrow{
+                color: var(--secondary-color);
+            }
+         span{
+            font-weight: 500;
+            color: grey;
+         }
+        }
+
+        h1{
+            font-size: 8vh;
+            font-weight: 900;
+            letter-spacing: 1px;
+
+            @include mobile{
+                font-size: 3vh;
+                letter-spacing: 0;
+                margin-top: 1rem;
+            }
+            @include fold{
+                font-size: 2.8vh;
+                letter-spacing: 0;
+                margin-top: 1rem;
+            }
+            @include tablet{
+                font-size: 3vh;
+            }
+        }
+    }
+
+    .bannerIMG{
+        width: 41vw;
+        height: 55vh;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 150px;
+        border-bottom-right-radius: 50px;
+        margin-top: 4rem;
+
+        @include mobile{
+            width: 80vw;
+            height: 25vh;
+            background-repeat: no-repeat;
+            border-bottom-left-radius: 120px;
+            margin-top: 1rem;
+        }
+        @include fold{
+            width: 75vw;
+            height: 22vh;
+            background-repeat: no-repeat;
+            border-bottom-left-radius: 120px;
+            margin-top: 1rem;
+        }
+        @include tablet{
+          height: 20vh;   
+        }
+    }
+
+    .bannerBG{
+        width: 50vw;
+        height: 70vh;
+        background: linear-gradient(to left, rgb(255,251,249), rgb(253, 233, 220));
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        border-bottom-left-radius: 150%;
+
+        @include mobile{
+            height: 30vh;
+            width: 70vw;
+        }
+        @include fold{
+            height: 30vh;
+            width: 70vw;
+        }
+    }
+}

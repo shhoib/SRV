@@ -1,0 +1,79 @@
+@import '../../App.scss';
+
+.currentTab{
+    display: flex;
+    padding: 0.4rem;
+    align-items: center;
+    border: 1px solid rgb(255, 210, 184);
+    margin: 1rem;
+    border-radius: 7px;
+    width: 15vw;
+    background-color: white;
+    transition: 1s;
+
+    @include mobile{
+        width: 21vw;
+        margin: 0.5rem;
+        padding: 0.3rem;
+    }
+    @include tablet{
+        width: 25vw;
+        margin: 0.5rem;
+        padding: 0.3rem;
+    }
+    @include fold{
+        width: 21vw;
+        margin: 0.3rem;
+        padding: 0.2rem;
+    }
+
+    h6{
+        margin: .1rem .7rem;
+        font-size: 3vh;
+        color: var(--secondary-color);
+        margin-right: .8rem;
+
+        @include mobile{
+            font-size: 1vh;
+            margin-right: 0.4rem;
+            margin: 0.2rem;
+        }
+        @include fold{
+            font-size: .9vh;
+            margin-right: 0.4rem;
+            margin: 0.2rem;
+        }
+        @include tablet{
+            font-size: 1.3vh;
+            margin-right: 1rem;
+            margin: 0.2rem;
+        }
+    }
+    p{
+        font-size: 2.5vh;
+        letter-spacing: .5px;
+
+        @include mobile{
+            font-size: 1vh;
+            letter-spacing: 0px;
+        }
+        @include fold{
+            font-size: .9vh;
+            letter-spacing: 0px;
+        }
+        @include tablet{
+            font-size: 1.3vh;
+            letter-spacing: 0px;
+        }
+    }
+    &:hover {
+        background-color: var(--secondary-color);
+        cursor: pointer;
+        color: white;
+
+        h6 {
+            color: white;
+        }
+    }
+}
+

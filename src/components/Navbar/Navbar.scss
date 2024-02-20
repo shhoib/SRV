@@ -1,0 +1,50 @@
+@import'../../App.scss';
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // height: 17vh;
+    // background-color: red;
+
+    img{
+        height: 80px;
+        margin-left: 2rem;
+    }
+    .tabs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    h4{
+        margin: 1rem;
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+    h4:hover{
+        cursor: pointer;
+    }
+    .login{
+        margin: .5rem;
+        border: 1px solid var(--primary-color);
+        background-color: transparent;
+        border-radius: 7px;
+        padding: .3rem 1.5rem;
+        height: 2.9rem;
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+    .getStarted{
+        margin: .5rem;
+        background: linear-gradient(to right, rgb(236, 145, 91), var(--secondary-color));
+        border-radius: 7px;
+        padding: .3rem 1.5rem;
+        height: 2.9rem;
+        border: none;
+        color: white;
+        margin-right: 2rem;
+        font-weight: 600;
+
+    }
+    }
+}

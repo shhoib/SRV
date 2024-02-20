@@ -1,0 +1,361 @@
+@import '../../App.scss';
+
+.overviewSection{
+    width: 40vw;
+
+    @include mobile{
+      width: 72vw;
+    }
+    @include tablet{
+      width: 69vw;
+    }
+    @include fold{
+      width: 72vw;
+    }
+
+h2{
+    margin-top: 1rem;
+
+    @include mobile{
+      margin-top: 0rem;
+      font-size: 1.5rem;
+    }
+    @include fold{
+      font-size: 1.2rem;
+      margin-top: 0rem;
+    }
+}
+h1{
+
+  font-size: 4vh;
+
+  @include mobile{
+    font-size: 3vh;
+  }
+  @include fold{
+    font-size: 3vh;
+  }
+}
+.courseDetails{
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 2px 2px 18px 2px rgb(248, 230, 219);
+    margin-top: 1rem;
+
+    
+    @include mobile{
+      padding: 1rem 0.5rem;
+    }
+    @include fold{
+      padding: 1rem 0.5rem;
+      margin-top: 0.8rem;
+    }
+    @include tablet{
+      padding: 1rem 0.5rem;
+    }
+
+    .head{
+        color: rgb(94, 92, 92);
+        font-size: 2.3vh;
+        
+        @include mobile{
+          font-size: .7rem;
+        }
+        @include fold{
+          font-size: .6rem;
+        }
+        @include tablet{
+          font-size: .9rem;
+        }
+    }
+    h4{
+        font-weight: 400;
+        font-size: 2.5vh;
+
+        
+        @include mobile{
+          font-size: .7rem;
+        }
+        @include fold{
+          font-size: .6rem;
+        }
+        @include tablet{
+          font-size: 1rem;
+        }
+    }
+
+    .courseData{
+        display: flex;
+
+    .insideData1 , .insideData2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .insideData2{
+        margin-left: 5rem;
+
+        
+        @include mobile{
+          margin-left: 1rem;
+        }
+        @include fold{
+          margin-left: .8rem;
+        }
+    }
+    }
+
+    .eligibility{
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .icon{
+        color: var(--secondary-color);
+        font-size: 4vh;
+        margin: .8rem;
+        
+        @include mobile{
+          font-size: 1.1rem;
+          margin: 0.5rem;
+        }
+        @include fold{
+          font-size: 1rem;
+          margin: 0.5rem;
+        }
+        @include tablet{
+          font-size: 1.5rem;
+          margin: 0.8rem;
+        }
+    }
+    img{
+        height: 65px;
+        margin-left: 1rem;
+
+        @include mobile{
+          height: 40px;
+        }
+        @include fold{
+          height: 38px;
+        }
+        @include tablet{
+          height: 45px;
+        }
+    }
+    .partner{
+        color: rgb(114, 113, 113);
+        margin: 1rem 0 .2rem .8rem;
+        font-size: 2.8vh;
+
+        @include mobile{
+          font-size: 1.5vh;
+        }
+        @include fold{
+          font-size: 1.3vh;
+        }
+        @include tablet{
+          font-size: 1.9vh;
+        }
+    }
+}
+
+  .ASAPDetails{
+    padding: 1.5rem .5rem;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 4vh;
+  }
+
+  .walletContainer{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 7px;
+    margin-top: 1rem;
+    width: 45%;
+
+    @include mobile{
+      width: 80%;
+    }
+    @include fold{
+      width: 80%;
+    }
+
+    .wallet{
+        font-size: 2rem;
+        color: var(--secondary-color);
+        margin: 1rem;
+
+        @include mobile{
+          font-size: 1.5rem;
+        }
+        @include fold{
+          font-size: 1.5rem;
+        }
+    }
+
+    .VR{
+        width: 1px;
+        background-color: rgb(196, 196, 196);
+        height: 50px;
+        border-radius: 50%;
+    }
+    .Amounts{
+        padding: 0.5rem .7rem .2rem .7rem;
+
+        h6{
+            padding: 0;
+            font-size: 1rem;
+            color: grey;
+
+            @include mobile{
+              font-size: 0.8rem;
+            }
+        }
+        h5{
+            font-size: 1.7rem;
+
+            @include mobile{
+              font-size: 1.4rem;
+            }
+        }
+    }
+  }
+
+  h3{
+    margin: 1.5rem 0 .5rem 0;
+  }
+
+  .installment{
+    display: flex;
+    align-items: center;
+
+    .shieldIcon{
+        clip-path: polygon(51% 0, 100% 18%, 100% 78%, 50% 100%, 0 79%, 0 18%);
+        background-color: var(--secondary-color);
+        width: 15px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: .7rem;
+
+        @include mobile{
+          width: 25px;
+        }
+    }
+    h6{
+        padding: .3rem .5rem;
+        color: rgb(6, 92, 100);
+        font-weight: 400;
+        font-size: .9rem;
+    }
+  }
+
+  .scholarshipText{
+    margin: 2rem 0 .5rem 0;
+  }
+
+  .scholarship{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    h6{
+        padding: 0.3rem 0 0.3rem 0rem;
+        font-weight: 400;
+        font-size: 0.9rem;
+    }
+
+    .tickContainer{
+        background-color: rgb(255, 209, 182);
+        border-radius: 50%;
+        padding: 0.3rem;
+        margin-right: .8rem;
+        display: flex;
+
+        .tick{
+            color: rgb(242,111,34);
+            font-size: .7rem;
+        }
+    }
+  }
+  .feesOffer{
+    font-weight: 400;
+    font-size: 1rem;
+    margin: .9rem 0rem 2rem 0rem;
+    color: rgb(107, 107, 107);
+  }
+
+  .loanText{
+    font-weight: 400;
+    font-size: .9rem;
+    margin-top: 0.5rem;
+  }
+
+  .bankContainer{
+    display: flex;
+    margin-top: 1rem;
+    
+   .canara{
+     width: 12vw;
+       height: 80px;
+       background-size: cover;
+      background-color: white;
+       background-repeat: no-repeat;
+       background-image: url('./IMG/canaraBank.webp');
+       border-radius: 5px;
+      border: 1px solid rgb(231, 231, 231);
+
+      @include mobile{
+        width: 20vw; 
+        height: 60px;
+      }
+    }
+    .SBI{
+      width: 12vw;
+      height:80px;
+      background-color: white;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('./IMG/SBI.webp');
+      border-radius: 5px;
+      border: 1px solid rgb(231, 231, 231);
+      margin-left: 1rem;
+
+      @include mobile{
+        width: 20vw; 
+        height: 60px;
+      }
+  }
+  .KSFE{
+    width: 12vw;
+    height: 80px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./IMG/KSFE.webp');
+    border-radius: 5px;
+    border: 1px solid rgb(231, 231, 231);
+    margin-left: 1rem;
+    
+    @include mobile{
+      width: 20vw; 
+      height: 60px;
+    }
+  }
+  .bankName{
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 400;
+    margin-top: .6rem;
+ }
+}
+.frequently{
+    margin-top: 2.5rem;
+}
+
+}

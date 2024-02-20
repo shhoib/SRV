@@ -1,0 +1,21 @@
+@import '../../App.scss';
+
+.Home{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+    .sideANDoverview{
+        display: flex;
+    }
+
+    @include mobile{
+        flex-direction: column;
+    }
+    @include tablet{
+        flex-direction: column;
+    }
+    @include fold{
+        flex-direction: column;
+    }
+}

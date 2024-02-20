@@ -1,0 +1,142 @@
+@import '../../App.scss';
+
+.suggested{
+    margin-left: 7vw;
+    margin: 3rem 0 1rem 7vw;
+}
+    .cards{
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+
+        .card{
+
+            img{
+                width: 17vw;
+                border-top-left-radius: 12px;
+                border-bottom-left-radius: 50px;
+                border-top-right-radius: 12px;
+                border-bottom-right-radius: 12px;
+                z-index: 2;
+                position: relative;
+
+                @include mobile{
+                    width: 80%;
+                }
+            }
+
+            .textsContainer{
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 2px 2px 18px 2px rgb(248, 230, 219);
+                padding: .7rem;
+                position: relative;
+                width: 19vw;
+                bottom: 20px;
+                right: 10px;
+                z-index: 1;
+
+                @include mobile{
+                    width: 80%;
+                }
+
+                .cardText{
+                    font-weight: 500;
+                    font-size: .8rem;
+                    margin: .8rem 0;
+                }
+
+                .dates{
+                    display: flex;
+                    align-items: center;
+
+                    .dateIcon{
+                        color: var(--secondary-color);
+                        font-size: 1.2rem;
+                    }
+
+                    .date{
+                        display: flex;
+                        align-items: center;
+                    }
+                    .duration{
+                        display: flex;
+                        align-items: center;
+                        margin-left: 2rem;
+                    }
+                    h6{
+                        color: grey;
+                        font-weight: 400;
+                        margin-left: 0.2rem;
+                    }
+                }
+            }
+
+            @include mobile{
+                // min-width: 90%;
+                // flex-wrap: wrap;
+            }
+        }
+        @include mobile{
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .downloadContainer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+        @include mobile{
+          flex-direction: column;
+        }
+
+        .download{
+            width: 55%;
+            background: linear-gradient(to bottom, rgb(255,251,249), rgb(253,237,227));
+            border-bottom-left-radius: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding-bottom: 7vw;
+            padding-left: 6vw;
+
+            .features{
+                display: flex;
+                align-items: center;
+                margin-top: 0.8rem;
+
+                .shieldIcon{
+                    clip-path: polygon(51% 0, 100% 18%, 100% 78%, 50% 100%, 0 79%, 0 18%);
+                    background-color: var(--secondary-color);
+                    width: 15px;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-size: .7rem;
+                }
+                h6{
+                    margin: 0 .5rem;
+                    font-weight: 400;
+                    font-size: 0.9rem;
+                }
+            }
+            h1{
+                font-size: 2.3rem;
+                margin-bottom: 1rem;
+            }
+            h5{
+                font-weight: 400;
+                font-size: 1.1rem;
+            }
+         
+            img{
+              width: 25vw;
+             }
+            
+        }
+    }
