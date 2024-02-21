@@ -23,6 +23,9 @@
                 @include mobile{
                     width: 80%;
                 }
+                @include fold{
+                    width: 80%;
+                }
             }
 
             .textsContainer{
@@ -44,12 +47,23 @@
                 }
                 @include fold{
                     width: 80%;
+                    right: 0;
+                    left: 8vw;
+                    align-items: center;
+                }
+                @include tablet{
+                    // width: 100%;
+                    padding: 0.5rem;
                 }
 
                 .cardText{
                     font-weight: 500;
                     font-size: .8rem;
                     margin: .8rem 0;
+
+                    @include tablet{
+                        font-size: 0.7rem;
+                    }
                 }
 
                 .dates{
@@ -64,11 +78,20 @@
                     .date{
                         display: flex;
                         align-items: center;
+
+                        @include tablet{
+                            font-size: 0.7rem;
+                        }
                     }
                     .duration{
                         display: flex;
                         align-items: center;
                         margin-left: 2rem;
+
+                        @include tablet{
+                            font-size: 0.8rem;
+                            margin-left: .4rem;
+                        }
                     }
                     h6{
                         color: grey;
@@ -82,12 +105,20 @@
                 min-width: 50%;
                 max-width: 80%;
             }
+            @include tablet{
+                min-width: 22%;
+                max-width: 22%;
+            }
         }
         @include mobile{
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
             text-align: center;
+        }
+
+        @include tablet{
+            gap: .5vw;
         }
     }
 
@@ -105,8 +136,8 @@
 
         img{
 
-            @include mobile{
-                // display: none;
+            @include tablet{
+                width: 40vw;
             }
         }
 
@@ -125,6 +156,17 @@
               padding-left: 14vw;
               border-bottom-left-radius: 150px;
               height: 40vh;
+            }
+            @include fold{
+              width: 100vw;   
+              padding-left: 14vw;
+              border-bottom-left-radius: 150px;
+              height: 40vh;
+            }
+            @include tablet{
+              width: 100vw;   
+              padding-left: 12vw;
+              border-bottom-left-radius: 150px;
             }
 
             .features{
@@ -160,6 +202,9 @@
                     @include fold{
                       font-size: 0.7rem;
                     }
+                    @include tablet{
+                      font-size: 0.8rem;
+                    }
                 }
             }
             h1{
@@ -172,6 +217,9 @@
                 @include fold{
                   font-size: 1.6rem;
                 }
+                @include tablet{
+                  font-size: 1.8rem;
+                }
             }
             h5{
                 font-weight: 400;
@@ -179,6 +227,12 @@
 
                 @include mobile{
                  font-size: 0.7rem;
+                }
+                @include fold{
+                 font-size: 0.7rem;
+                }
+                @include tablet{
+                 font-size: 0.8rem;
                 }
             }
          

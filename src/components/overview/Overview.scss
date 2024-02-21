@@ -35,6 +35,9 @@ h1{
   @include fold{
     font-size: 3vh;
   }
+  @include tablet{
+    font-size: 3.5vh;
+  }
 }
 .courseDetails{
     background-color: white;
@@ -318,6 +321,10 @@ h1{
         width: 20vw; 
         height: 60px;
       }
+      @include tablet{
+        width: 20vw; 
+        height: 90px;
+      }
     }
     .SBI{
       width: 12vw;
@@ -338,6 +345,10 @@ h1{
         width: 22vw; 
         height: 50px;
       }
+      @include tablet{
+        width: 20vw; 
+        height: 90px;
+      }
   }
   .KSFE{
     width: 12vw;
@@ -357,6 +368,10 @@ h1{
     @include fold{
       width: 20vw; 
       height: 50px;
+    }
+    @include tablet{
+      width: 20vw; 
+      height: 90px;
     }
   }
   .bankName{
