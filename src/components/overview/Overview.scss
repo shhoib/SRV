@@ -10,7 +10,7 @@
       width: 69vw;
     }
     @include fold{
-      width: 72vw;
+      width: 74vw;
     }
 
 h2{
@@ -183,7 +183,7 @@ h1{
       width: 80%;
     }
     @include fold{
-      width: 80%;
+      width: 100%;
     }
 
     .wallet{
@@ -196,6 +196,7 @@ h1{
         }
         @include fold{
           font-size: 1.5rem;
+          margin: 0.7rem;
         }
     }
 
@@ -216,12 +217,18 @@ h1{
             @include mobile{
               font-size: 0.8rem;
             }
+            @include fold{
+              font-size: 0.8rem;
+            }
         }
         h5{
             font-size: 1.7rem;
 
             @include mobile{
               font-size: 1.4rem;
+            }
+            @include fold{
+              font-size: 1.2rem;
             }
         }
     }
@@ -255,6 +262,10 @@ h1{
         color: rgb(6, 92, 100);
         font-weight: 400;
         font-size: .9rem;
+
+        @include fold{
+          font-size: 0.7rem;
+        }
     }
   }
 
@@ -271,6 +282,10 @@ h1{
         padding: 0.3rem 0 0.3rem 0rem;
         font-weight: 400;
         font-size: 0.9rem;
+
+        @include fold{
+          font-size: 0.7rem;
+        }
     }
 
     .tickContainer{
@@ -291,17 +306,26 @@ h1{
     font-size: 1rem;
     margin: .9rem 0rem 2rem 0rem;
     color: rgb(107, 107, 107);
+
+    @include fold{
+      font-size: 0.7rem;
+    }
   }
 
   .loanText{
     font-weight: 400;
     font-size: .9rem;
     margin-top: 0.5rem;
+
+    @include fold{
+      font-size: 0.7rem;
+    }
   }
 
   .bankContainer{
     display: flex;
     margin-top: 1rem;
+    gap: 1vw;
     
    .canara{
      width: 12vw;
@@ -319,7 +343,7 @@ h1{
       }
       @include fold{
         width: 20vw; 
-        height: 60px;
+        height: 40px;
       }
       @include tablet{
         width: 20vw; 
@@ -335,15 +359,16 @@ h1{
       background-image: url('./IMG/SBI.webp');
       border-radius: 5px;
       border: 1px solid rgb(231, 231, 231);
-      margin-left: 1rem;
+      // margin-left: 1rem;
 
       @include mobile{
         width: 24vw; 
         height: 50px;
       }
       @include fold{
-        width: 22vw; 
-        height: 50px;
+        // width: 22vw; 
+        width: 100%;
+        height: 40px;
       }
       @include tablet{
         width: 20vw; 
@@ -359,7 +384,6 @@ h1{
     background-image: url('./IMG/KSFE.webp');
     border-radius: 5px;
     border: 1px solid rgb(231, 231, 231);
-    margin-left: 1rem;
     
     @include mobile{
       width: 20vw; 
@@ -367,7 +391,7 @@ h1{
     }
     @include fold{
       width: 20vw; 
-      height: 50px;
+      height: 40px;
     }
     @include tablet{
       width: 20vw; 
@@ -384,7 +408,7 @@ h1{
       font-size: 0.7rem;
     }
     @include fold{
-      font-size: 0.7rem;
+      font-size: 0.6rem;
     }
  }
 }

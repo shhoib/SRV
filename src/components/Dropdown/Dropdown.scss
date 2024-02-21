@@ -26,7 +26,14 @@
             @include mobile{
                 font-size: 0.7rem;
             }
+            @include fold{
+                font-size: 0.6rem;
+            }
         }
+    }
+    .header:hover{
+        background-color: rgb(254,244,238);
+        cursor: pointer;
     }
     .body{
         color: rgb(99, 98, 98);
@@ -37,6 +44,9 @@
 
         @include mobile{
             padding: 0.6rem;
+        }
+        @include fold{
+            padding: 0.5rem;
         }
 
         .tickContainer{
@@ -67,6 +77,9 @@
 
             @include mobile{
                 font-size: 0.7rem;
+            }
+            @include fold{
+                font-size: 0.6rem;
             }
         }
     }

@@ -83,6 +83,10 @@
         @include mobile{
          margin: 0.5rem .4rem;
         }
+        @include fold{
+         margin: 0.5rem .4rem;
+         padding: 0.6rem;
+        }
     }
     input::placeholder{
         font-size: .9rem;
@@ -96,6 +100,11 @@
         font-family: 'Poppins', sans-serif;
         border-radius: 7px;
         margin-bottom: 1rem;
+
+        @include fold{
+            font-size: 0.7rem;
+            padding: 0.7rem;
+          }
     }
     .radio{
         border: 1px solid rgb(211, 211, 211);
@@ -117,6 +126,9 @@
         @include fold{
             width: 95%;
             padding: .4rem .1rem;
+            font-size: 0.7rem;
+            margin: 0.3rem;
+            padding: .2rem;
         }
 
         .radioAtext{
@@ -148,6 +160,11 @@
         padding: 1rem;
         font-weight: 700;
         font-size: 1rem;
+
+        @include fold{
+            padding: 0.8rem;
+            margin: 1.5rem 0.4rem;
+        }
     }
     button:hover{
         background: linear-gradient(to right,var(--secondary-color), rgb(233, 147, 97));

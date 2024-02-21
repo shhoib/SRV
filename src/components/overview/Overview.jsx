@@ -68,7 +68,7 @@ const Overview = () => {
     <section className='overviewSection'>
         <h2>Overview</h2>
       <div className="courseDetails">
-           
+                
            <div className='courseData'>
 
             <div className='insideData1'>
