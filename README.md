@@ -1,8 +1,21 @@
-# React + Vite
+ASAP Website Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a clone of the Additional Skill Acquisition Programme (ASAP) website by the Kerala Government. It has been developed as a task for SRV technologies using React and Sass.
 
-Currently, two official plugins are available:
+////Installation////
+Clone the repository:  https://github.com/shhoib/SRV.git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+no need for changing directory
+
+Install dependencies: npm i
+
+////Usage////
+To start the development server, run:   npm run dev
+
+This will open the project in your default web browser. Any changes you make to the source files will automatically trigger a hot reload.
+
+External Libraries Used
+React
+Sass
+react-icons
+
