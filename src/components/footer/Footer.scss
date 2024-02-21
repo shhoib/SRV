@@ -1,0 +1,327 @@
+@import '../../App.scss';
+
+
+.footer{
+    background: linear-gradient(to top, rgb(255,251,249), rgb(253,237,227));
+    padding-bottom: 5rem;
+
+}
+.places{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 9vw;
+    padding-top: 3rem;
+    margin-top: 1rem;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        gap: 4vw;
+    }
+    @include fold{
+        flex-direction: column;
+        align-items: center;
+        gap: 4vw;
+    }
+
+    h5{
+        font-size: 1rem;
+        font-weight: 500;
+
+        @include mobile{
+            font-size: 0.9rem;
+        }
+        @include fold{
+            font-size: 0.9rem;
+        }
+    }
+    h6{
+        font-size: .9rem;
+        font-weight: 400;
+        margin:  .5rem 0rem;
+        color: grey;
+
+        @include mobile{
+            font-size: 0.6rem;
+            margin: 0.4rem 0rem;
+        }
+        @include fold{
+            font-size: 0.7rem;
+        }
+    }
+
+    .ours{
+        display: flex;
+        gap: 8vw;
+
+    }
+
+    .WholeLocations{
+        display: flex;
+        gap: 8vw;
+
+        @include mobile{
+            gap: 5vw;
+        }
+        @include fold{
+            gap: 5vw;
+        }
+
+    }
+}
+
+.supportContainer{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    margin-top: 2rem;
+
+    @include mobile{
+        flex-direction: column;
+    }
+
+    .govt{
+
+        text-align: center;
+
+        img{
+          height: 90px;
+
+          @include mobile{
+            height: 70px;
+          }
+        }
+        .govFooter{
+            background-color: rgb(253,237,227);
+            font-size: .7rem;
+            text-align: center;
+            font-weight: 400;
+            color: grey;
+        }
+    }
+    .support{
+
+        @include mobile{   
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .icon{
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            
+            @include mobile{
+                font-size: 1rem;
+            }
+        }
+        h5{
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: .7rem;
+        }
+        h6{
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-left: .5rem;
+            color: gray;
+
+            @include mobile{
+             font-size: 0.7rem;
+            }
+            @include fold{
+             font-size: 0.6rem;
+            }
+        }
+
+        .mailANDnumber{
+            display: flex;
+            justify-content: center;
+            gap: 3vw;
+        }
+        .number{
+            display: flex;
+            justify-content: center;
+            gap: 5vw;
+            margin-top: 0.5rem;
+        }
+        .socialIcons{
+            display: flex;
+            gap: 1.5vw;
+            margin-top: 0.7rem;
+
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .update{
+
+        width: 27vw;
+
+        @include mobile{
+            width: 100vw;
+            text-align: center;
+        }
+        @include fold{
+            width: 100vw;
+            text-align: center;
+        }
+
+        h5{
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        h6{
+            font-size: 0.8rem;
+            font-weight: 400;
+            margin: 0.3rem 0rem .5rem 0rem;
+            color: gray;
+        }
+        .inputContainer{
+            position: absolute;
+            width: 26vw;
+            
+            @include mobile{
+                width: 90vw;
+                margin-left: 5vw;            
+            }
+            @include fold{
+                width: 90vw;
+                margin-left: 1rem;            
+            }
+
+            input{
+                border-radius: 6px;
+                border: 1px solid rgb(206, 203, 203);
+                width: 100%;
+                padding: .8rem .7rem;
+            }
+            input::placeholder{
+                font-size: .9rem;
+                font-family: 'Poppins', sans-serif;
+                color: rgb(146, 146, 146);
+            }
+            button{
+                background: linear-gradient(to right, rgb(255, 169, 119), rgb(253, 93, 1));
+                border: none;
+                color: white;
+                padding: .6rem .7rem;
+                border-radius: 10px;
+                position: absolute;
+                right: 5px;
+                top: 4px;
+            }
+        }
+    }
+}
+.hr {
+    width: 100%;
+    border: 1px solid rgb(253, 237, 227);
+    margin: 2rem 0rem;
+  }
+
+  .contactContainer{
+    display: flex;
+
+    @include mobile{
+        flex-direction: column;
+    }
+    @include fold{
+        flex-direction: column;
+    }
+
+    .contact{
+        width: 40vw;
+        margin-left: 4vw;
+
+        @include mobile{
+         width: 100vw;   
+        }
+        @include fold{
+         width: 100vw;   
+        }
+
+        h6{
+            font-weight: 400;
+            font-size: 0.8rem;
+            color: grey;
+            margin-bottom: .5rem;
+
+            @include mobile{
+              font-size: 0.6rem;
+              text-align: center;
+            }
+            @include fold{
+              font-size: 0.6rem;
+              text-align: center;
+            }
+
+            span{
+                margin-left: 0.5rem;
+            }
+        }
+    }
+    .trademark{
+        width: 50vw;
+        font-weight: 400;
+        color: grey;
+        font-size: 0.7rem;
+
+        @include mobile{
+            width: 100vw;
+            font-size: 0.6rem;
+            text-align: center;
+        }
+    }
+  }
+
+  .copyrightContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+
+    @include mobile{
+        flex-direction: column;
+    }
+    @include fold{
+        flex-direction: column;
+    }
+    
+    .copyright{
+
+        @include mobile{
+            text-align: center;
+        }
+        @include fold{
+            text-align: center;
+        }
+        h6{
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: gray;
+            margin-bottom: 0.5rem;
+            margin-left: 5vw;
+
+        }
+    }
+    h6{
+        font-weight: 400;
+        color: gray;
+        font-size: 0.9rem;
+        margin-right: 3vw;
+
+        @include mobile{
+            text-align: center;
+        }
+        @include fold{
+            text-align: center;
+        }
+
+        span{
+            margin-left: 0.8rem;
+        }
+    }
+  }
