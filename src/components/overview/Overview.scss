@@ -312,6 +312,10 @@ h1{
 
       @include mobile{
         width: 20vw; 
+        height: 50px;
+      }
+      @include fold{
+        width: 20vw; 
         height: 60px;
       }
     }
@@ -327,8 +331,12 @@ h1{
       margin-left: 1rem;
 
       @include mobile{
-        width: 20vw; 
-        height: 60px;
+        width: 24vw; 
+        height: 50px;
+      }
+      @include fold{
+        width: 22vw; 
+        height: 50px;
       }
   }
   .KSFE{
@@ -344,7 +352,11 @@ h1{
     
     @include mobile{
       width: 20vw; 
-      height: 60px;
+      height: 50px;
+    }
+    @include fold{
+      width: 20vw; 
+      height: 50px;
     }
   }
   .bankName{
@@ -352,6 +364,13 @@ h1{
     font-size: .9rem;
     font-weight: 400;
     margin-top: .6rem;
+
+    @include mobile{
+      font-size: 0.7rem;
+    }
+    @include fold{
+      font-size: 0.7rem;
+    }
  }
 }
 .frequently{

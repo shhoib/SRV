@@ -81,14 +81,14 @@
 
         @include mobile{
             width: 80vw;
-            height: 25vh;
+            height: 20vh;
             background-repeat: no-repeat;
             border-bottom-left-radius: 120px;
             margin-top: 1rem;
         }
         @include fold{
             width: 75vw;
-            height: 22vh;
+            height: 18vh;
             background-repeat: no-repeat;
             border-bottom-left-radius: 120px;
             margin-top: 1rem;
@@ -121,26 +121,57 @@
     .close1{
         color: rgb(255,155,113);
         position: absolute;
-        top: 23%;
+        top: 30%;
         left: 3%;
         font-size: 1.5rem;
         font-weight: 600;
+
+        @include tablet{
+            top: 10%;
+            left: 2%;
+        }
+        @include mobile{
+            display: none;
+        }
+        @include fold{
+            display: none;
+        }
     }
     .rectangle1{
         position: absolute;
         width: 3vw;
         height: 3vw;
-        top: 15%;
+        top: 22%;
         left: 23%;
         border: 2px dotted rgb(128,237,153);
+
+        @include tablet{
+            top: 8%;
+        }
+        @include mobile{
+            display: none;
+        }
+        @include fold{
+            display: none;
+        }
     }
     .rectangle2{
         position: absolute;
         width: 1.3vw;
         height: 1.3vw;
-        top: 10%;
+        top: 16%;
         left: 29%;
         background: linear-gradient(to right, rgb(253,201,94),rgb(250, 210, 131));
+
+        @include tablet{
+            top: 5%;
+        }
+        @include mobile{
+            display: none;
+        }
+        @include fold{
+            display: none;
+        }
     }
     .circle{
         width: 2vw;
@@ -148,23 +179,52 @@
         border-radius: 50%;
         border: 5px solid rgb(250, 210, 131);
         position: absolute;
-        bottom: 3%;
+        bottom: 19%;
         left: 10%;
+        
+        @include tablet{
+            top: 32%;
+        }
+        @include mobile{
+            display: none;
+        }
+        @include fold{
+            display: none;
+        }
     }
     .close2{
         position: absolute;
         left: 35%;
-        bottom: 5%;
+        bottom: 20%;
         color: rgb(191,244,201);
         font-size: 2rem;
         font-weight: 900;
+        @include tablet{
+            top: 30%;
+        }
+        @include mobile{
+            display: none;
+        }
+        @include fold{
+            display: none;
+        }
     }
     .close3{
         color: rgb(255,155,113);
         position: absolute;
-        bottom: 20%;
+        bottom: 35%;
         left: 45%;
         font-size: 1.5rem;
         font-weight: 900;
+
+        @include tablet{
+            top: 27%;
+        }
+        @include mobile{
+            display: none;
+        }
+        @include fold{
+            display: none;
+        }
     }
 }

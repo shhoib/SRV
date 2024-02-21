@@ -10,7 +10,10 @@ nav{
         margin-left: 2rem;
 
         @include mobile{
-            height: 60px;
+            height: 40px;
+        }
+        @include fold{
+            height: 35px;
         }
     }
     .tabs{
@@ -23,8 +26,17 @@ nav{
         color: var(--primary-color);
         font-weight: 600;
 
+        @include tablet{
+            font-size: 0.8rem;
+            margin: 0.5rem;
+        }
         @include mobile{
             font-size: 0.8rem;
+            display: none;
+        }
+        @include fold{
+            font-size: 0.8rem;
+            display: none;
         }
     }
     h4:hover{
@@ -39,6 +51,25 @@ nav{
         height: 2.9rem;
         font-weight: 600;
         color: var(--primary-color);
+
+        @include mobile{
+            font-size: 0.6rem;
+            height: 2rem;
+            padding:  .2rem .8rem;
+            margin: 0.3rem;
+        }
+        @include fold{
+            font-size: 0.6rem;
+            height: 2rem;
+            padding:  .2rem .6rem;
+            margin: 0.3rem;
+        }
+        @include tablet{
+            font-size: 0.8rem;
+            height: 2.3rem;
+            padding:  .2rem .8rem;
+            margin: 0.6rem;
+        }
     }
     .getStarted{
         margin: .5rem;
@@ -51,6 +82,54 @@ nav{
         margin-right: 2rem;
         font-weight: 600;
 
+        @include mobile{
+            margin: 0.4rem;
+            padding: 0.3rem .8rem;
+            height: 2rem;
+            font-size: 0.6rem;
+        }
+        @include fold{
+            margin: 0.4rem;
+            padding: 0.3rem .6rem;
+            height: 2rem;
+            font-size: 0.5rem;
+        }
+        @include tablet{
+            margin: 0.4rem;
+            padding: 0.3rem .8rem;
+            height: 2.3rem;
+            font-size: 0.7rem;
+        }
     }
+    }
+
+    .menuIcon{
+        display: none;
+
+        @include mobile{
+            display: flex;
+            margin-right: 1.5rem;
+        }
+        @include fold{
+            display: flex;
+            margin-right: 1.5rem;
+        }
+    }
+    .menu{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50vw;
+        border-radius: 17px;
+
+        h4{
+            font-weight: 400;
+            text-align: center;
+            background-color: antiquewhite;
+            padding: .5rem;
+        }
+        .h4:hover{
+            background-color: white;
+        }
     }
 }
