@@ -14,6 +14,11 @@
     padding-top: 3rem;
     margin-top: 1rem;
 
+    @include tablet{
+        align-items: center;
+        padding: 2.5rem 0 0 1rem;
+        gap: 4vw;
+    }
     @include mobile{
         flex-direction: column;
         align-items: center;
@@ -30,6 +35,9 @@
         font-size: 1rem;
         font-weight: 500;
 
+        @include tablet{
+            font-size: 0.9rem;
+        }
         @include mobile{
             font-size: 0.9rem;
         }
@@ -43,6 +51,9 @@
         margin:  .5rem 0rem;
         color: grey;
 
+        @include tablet{
+            font-size: 0.8rem;
+        }
         @include mobile{
             font-size: 0.6rem;
             margin: 0.4rem 0rem;
@@ -56,6 +67,10 @@
         display: flex;
         gap: 8vw;
 
+        @include tablet{
+            gap: 4vw;
+        }
+
     }
 
     .WholeLocations{
@@ -67,6 +82,9 @@
         }
         @include fold{
             gap: 5vw;
+        }
+        @include tablet{
+            gap: 3vw;
         }
 
     }
@@ -91,6 +109,12 @@
 
           @include mobile{
             height: 70px;
+          }
+          @include fold{
+            height: 70px;
+          }
+          @include tablet{
+            height: 50px;
           }
         }
         .govFooter{
