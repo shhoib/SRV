@@ -18,12 +18,12 @@ const Dropdown = ({ syllabusData }) => {
         <>
             {syllabusData.map((value, i) => (
                 <div className={` dropdown ${!openStates[i] ? 'notOpened' : ''}`} key={i}>
-                    <div className={`header ${!openStates[i] ? 'notOpened' : ''}`}>
+                    <div className={`header ${!openStates[i] ? 'notOpened' : ''}`}  onClick={() => handleOpen(i)}>
                         <h6>{value.header}</h6>
                         {openStates[i] ? (
-                            <AiOutlineMinus onClick={() => handleOpen(i)} />
+                            <AiOutlineMinus/>
                         ) : (
-                            <GoPlus onClick={() => handleOpen(i)} />
+                            <GoPlus />
                         )}
                     </div>
                     {openStates[i] && (
