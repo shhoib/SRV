@@ -19,6 +19,7 @@
                 border-bottom-right-radius: 12px;
                 z-index: 2;
                 position: relative;
+                transition: 1s;
 
                 @include mobile{
                     width: 80%;
@@ -26,6 +27,9 @@
                 @include fold{
                     width: 80%;
                 }
+            }
+            img:hover{
+                scale: 1.1;
             }
 
             .textsContainer{

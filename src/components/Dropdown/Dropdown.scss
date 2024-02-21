@@ -33,6 +33,7 @@
         display: flex;
         align-items: center;
         padding: 1rem;
+        animation: drop 1s;
 
         @include mobile{
             padding: 0.6rem;
@@ -75,4 +76,13 @@
     background-color: transparent;
     border-bottom: none;
     border-radius: 7px;
+}
+
+@keyframes drop {
+    from{
+        transform: translateY(-30px);
+    }
+    to{
+        transform: translateY(0px);
+    }
 }

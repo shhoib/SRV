@@ -89,7 +89,7 @@
         font-family: 'Poppins', sans-serif;
         color: rgb(146, 146, 146);
     }
-    .dropdown{
+    .dropdownR{
         width: 95%;
         margin: 0rem .5rem;
         padding: 0.9rem;
@@ -104,6 +104,7 @@
         justify-content: space-between;
         border-radius: 7px;
         margin: 0.5rem;
+        transition: 1s;
 
         @include mobile{
          width: 95%;
@@ -131,8 +132,11 @@
             color: rgb(184, 182, 182);
             font-weight: 400;
             margin-right: 0.5rem;
-            // text-align: end;
         }
+    }
+    .radio:hover{
+        background-color: rgb(255, 169, 119);
+        color: white;
     }
     button{
         background: linear-gradient(to right, rgb(255, 169, 119), rgb(253, 93, 1));

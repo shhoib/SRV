@@ -37,7 +37,7 @@ const Registration = () => {
       <input type="text" placeholder='Your full name'/>
       <input type="number" placeholder='Mobile Number'/>
       <input type="email" placeholder='Email'/>
-      <select className='dropdown'>
+      <select className='dropdownR'>
         <option value="option1">District</option>
         <option value="option1">Kannur</option>
         <option value="option2">Kozhikode</option>
