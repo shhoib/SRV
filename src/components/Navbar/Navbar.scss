@@ -4,12 +4,14 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // height: 17vh;
-    // background-color: red;
 
     img{
         height: 80px;
         margin-left: 2rem;
+
+        @include mobile{
+            height: 60px;
+        }
     }
     .tabs{
         display: flex;
@@ -20,6 +22,10 @@ nav{
         margin: 1rem;
         color: var(--primary-color);
         font-weight: 600;
+
+        @include mobile{
+            font-size: 0.8rem;
+        }
     }
     h4:hover{
         cursor: pointer;

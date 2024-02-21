@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    // position: relative;
 
     @include mobile{
         flex-direction: column;
@@ -115,5 +116,55 @@
             height: 30vh;
             width: 70vw;
         }
+    }
+
+    .close1{
+        color: rgb(255,155,113);
+        position: absolute;
+        top: 23%;
+        left: 3%;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .rectangle1{
+        position: absolute;
+        width: 3vw;
+        height: 3vw;
+        top: 15%;
+        left: 23%;
+        border: 2px dotted rgb(128,237,153);
+    }
+    .rectangle2{
+        position: absolute;
+        width: 1.3vw;
+        height: 1.3vw;
+        top: 10%;
+        left: 29%;
+        background: linear-gradient(to right, rgb(253,201,94),rgb(250, 210, 131));
+    }
+    .circle{
+        width: 2vw;
+        height: 2vw;
+        border-radius: 50%;
+        border: 5px solid rgb(250, 210, 131);
+        position: absolute;
+        bottom: 3%;
+        left: 10%;
+    }
+    .close2{
+        position: absolute;
+        left: 35%;
+        bottom: 5%;
+        color: rgb(191,244,201);
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .close3{
+        color: rgb(255,155,113);
+        position: absolute;
+        bottom: 20%;
+        left: 45%;
+        font-size: 1.5rem;
+        font-weight: 900;
     }
 }

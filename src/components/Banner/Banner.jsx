@@ -1,5 +1,5 @@
 import './Banner.scss';
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowForward ,IoMdClose} from "react-icons/io";
 
 
 const Banner = () => {
@@ -11,6 +11,12 @@ const Banner = () => {
         </div>
         <img src='./IMG/robo.jpg' alt="" className='bannerIMG'/>
         <div className='bannerBG'></div>
+        <div className="close1"><IoMdClose/></div>
+        <div className="rectangle1"></div>
+        <div className="rectangle2"></div>
+        <div className="circle"></div>
+        <div className="close2"><IoMdClose/></div>
+        <div className="close3"><IoMdClose/></div>
     </section>
   )
 }

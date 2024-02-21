@@ -38,6 +38,12 @@
 
                 @include mobile{
                     width: 80%;
+                    right: 0;
+                    left: 8vw;
+                    align-items: center;
+                }
+                @include fold{
+                    width: 80%;
                 }
 
                 .cardText{
@@ -73,14 +79,15 @@
             }
 
             @include mobile{
-                // min-width: 90%;
-                // flex-wrap: wrap;
+                min-width: 50%;
+                max-width: 80%;
             }
         }
         @include mobile{
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+            text-align: center;
         }
     }
 
@@ -92,6 +99,16 @@
         @include mobile{
           flex-direction: column;
         }
+        @include fold{
+          flex-direction: column;
+        }
+
+        img{
+
+            @include mobile{
+                // display: none;
+            }
+        }
 
         .download{
             width: 55%;
@@ -102,6 +119,13 @@
             justify-content: end;
             padding-bottom: 7vw;
             padding-left: 6vw;
+
+            @include mobile{
+              width: 100vw;   
+              padding-left: 14vw;
+              border-bottom-left-radius: 150px;
+              height: 40vh;
+            }
 
             .features{
                 display: flex;
@@ -118,24 +142,53 @@
                     justify-content: center;
                     color: white;
                     font-size: .7rem;
+
+                    @include mobile{
+                        font-size: 0.6rem;
+                        width: 12px;
+                        height: 17px;
+                    }
                 }
                 h6{
                     margin: 0 .5rem;
                     font-weight: 400;
                     font-size: 0.9rem;
+
+                    @include mobile{
+                      font-size: 0.7rem;
+                    }
+                    @include fold{
+                      font-size: 0.7rem;
+                    }
                 }
             }
             h1{
                 font-size: 2.3rem;
                 margin-bottom: 1rem;
+
+                @include mobile{
+                  font-size: 1.6rem;
+                }
+                @include fold{
+                  font-size: 1.6rem;
+                }
             }
             h5{
                 font-weight: 400;
                 font-size: 1.1rem;
+
+                @include mobile{
+                 font-size: 0.7rem;
+                }
             }
          
             img{
               width: 25vw;
+
+              
+              @include mobile{
+                margin-bottom: 3rem;
+            }
              }
             
         }
